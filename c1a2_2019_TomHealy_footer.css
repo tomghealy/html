@@ -1,0 +1,195 @@
+/*
+	Assignmment C1_A1_2019_TomHealy - CSS File
+	
+	This page defines the heading formts, table format and the footer format
+		
+	Author	Tom Healy
+	
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+
+<html> 
+	<head>
+		<style> 
+			h1 { 
+				font-size: 40px; 
+				color: blue; 
+				font-weight: bold; 
+				text-align: center;
+			} 
+			h2 { 
+				font-size: 17px; 
+				color: MediumSeaGreen;
+				margin-bottom: 15px; 
+			} 
+			body { 
+				margin-left: 1 auto; 
+				background-position: center; 
+				background-size: contain; 
+			} 
+			
+			p {
+				font-family: verdana;
+				font-size: 12px;
+				color: Blue;
+			}
+			
+			.input[type=text] {
+				width: 10%;
+				padding: 3px 10px;
+				margin: 8px 0;
+				box-sizing: border-box;
+			}
+
+			/* Error Message formatting */
+			.errorMsg {
+				font-family: verdana;
+				font-size: 17px;
+				color: Red;
+			}
+			
+			.menu {    
+				position: sticky; 
+				top: 0; 
+				background-color: MediumSeaGreen; 
+				padding: 10px 0px 10px 0px; 
+				color: white; 
+				margin: 0 auto; 
+				overflow: hidden; 
+			} 
+			.menu a { 
+				float: left; 
+				color: white; 
+				text-align: center; 
+				padding: 14px 16px; 
+				text-decoration: none; 
+				font-size: 20px; 
+			} 
+			.menu-TCs { 
+				right: auto; 
+				float: right; 
+			}
+			
+			.button {
+				background-color: MediumSeaGreen;
+				/* Green */
+				border: none;
+				color: white;
+				padding: 5px 10px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 12px;
+			}
+			
+			.circleRed{
+				background-color:Red;
+				display:block;
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				border:1px solid #000;
+				margin:auto;
+				line-height:50px;
+				text-align:center
+			}
+
+			.circleYellow{
+				background-color:Yellow;
+				display:block;
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				border:1px solid #000;
+				margin:auto;
+				line-height:50px;
+				text-align:center
+			}
+			
+			.circleGreen{
+				background-color:Green;
+				display:block;
+				height:50px;
+				width:50px;
+				border-radius:50%;
+				border:1px solid #000;
+				margin:0;
+				line-height:50px;
+				text-align:center
+			}
+			
+			.button:hover span {
+				padding-right: 25px;
+			}
+
+			.button:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+
+			table {
+				border-collapse: collapse;
+				cellpadding: 1;
+				cellspacing: 1;	
+			}	
+						
+			table, th, td {
+				border: 1px solid black;
+			}
+ 
+			.body_sec { 
+				margin-left:20px; 
+			} 
+
+			.main {
+				overflow: auto;
+				padding-bottom: 150px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+			}
+			
+			.container {
+				min-height: 85%;
+			}
+
+			/* Create the footer at the bottom of the page, allow it to scroll if the page grows */
+			.footer {
+				width: 100%; 
+				position: relative; 
+				height: 150px;
+				margin-top: -30px;
+				clear: both;
+				
+			}
+
+			/* Set the picture of the Orcars award to repeat horizontally */
+			.filler {		
+				background-image:url('Images/Oscars.jpg');
+				background-size: 100px 150px;
+				opacity: 0.5;
+				background-repeat: repeat-x;
+			}
+			
+			.acknowledgements {
+				background-color: MediumSeaGreen; 
+				text-align: center; 
+				padding-top: 6px;
+				font-size: 12px; 
+				font-weight: bold;
+				color: white; 
+			}
+			
+			.poster {
+				width: 120px;
+				height: 160px;
+			}
+		</style> 
+	</head> 
+</html>

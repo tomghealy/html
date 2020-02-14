@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		Assignment C1A2: question 3 - Matrix
+	
+		Propmt the user to select a matrix size from a dropdown list. Generate
+		a matrix of the selected size where each cell is rendered as a circle,
+		the centre cell to be rendeded in red, cells in even rows and even
+		column to be rendered in yellow and all others in green
+	-->
+	
+<head>
+	<!--
+		Internal CSS for this question
+		<link rel="stylesheet" href="c1a2_2019_TomHealy.css">
+	-->
+	<script src="c1a2q3_2019_TomHealy.js"></script>
+	<script src="c1a2_functions_2019_TomHealy.js"></script>
+	<title>Assignment: C1A2Q3 2019 Tom Healy</title>
+	<meta name="description" content="C1A2Q3 2019 Tom Healy">
+	<meta name="keywords" content="Javacript, Dropdown List, Table, matrix">
+	
+	<!-- CSS Styling -->
+	<style> 
+		h1 { 
+			font-size: 40px; 
+			color: DodgerBlue; 
+			font-weight: bold; 
+		} 
+		h2 { 
+			font-size: 17px; 
+			color: MediumSeaGreen
+			margin-bottom: 15px; 
+		} 
+		body { 
+			margin-left: 1 auto; 
+			background-position: center; 
+			background-size: contain; 
+		} 
+		
+		p {
+			font-family: verdana;
+			font-size: 12px;
+			color: Blue;
+		}
+		
+		.input[type=text] {
+			width: 10%;
+			padding: 3px 10px;
+			margin: 8px 0;
+			box-sizing: border-box;
+		}
+
+		table, th, td {
+			border: 0;
+			border-collapse: collapse;
+			cellpadding: 0;
+			cellspacing: 0;	
+		}
+		
+		.button {
+			background-color: #4CAF50;
+			/* Green */
+			border: none;
+			color: white;
+			padding: 5px 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 12px;
+		}	
+		
+		.circleRed{
+			background-color:Red;
+			display:block;
+			height:50px;
+			width:50px;
+			border-radius:50%;
+			border:1px solid #000;
+			margin:auto;
+			line-height:50px;
+			text-align:center
+		}
+
+		.circleYellow{
+			background-color:Yellow;
+			display:block;
+			height:50px;
+			width:50px;
+			border-radius:50%;
+			border:1px solid #000;
+			margin:auto;
+			line-height:50px;
+			text-align:center
+		}
+		
+		.circleGreen{
+			background-color:Green;
+			display:block;
+			height:50px;
+			width:50px;
+			border-radius:50%;
+			border:1px solid #000;
+			margin:0;
+			line-height:50px;
+			text-align:center
+		}
+	</style>
+</head>
+<body>
+
+	<h1 align="center">C1 A2 Q3 2019 Tom Healy</h1>
+	
+	<p>Select a Matrix Size from the drop-down list:</p>
+
+	<!-- 
+		Create a dropdown list with the marrix sizes and a button to generate the matrix 
+		The dropdown list defsults to the first value - if the user selects a different
+		matrix size then the getMatrixSize function captures the value
+	-->
+	<form>
+		<select id="matrixSize" onChange="getMatrixSize();">
+			<option value="3">3x3</option>
+			<option value="5">5x5</option>
+			<option value="7">7x7</option>
+		</select>
+		
+		<!-- Add a button to generate the matrix when clicked -->
+		<input type="button" class="button" onClick="generateMatrix()" value="Generate Matrix" />
+	</form>
+	
+	<!-- Create the placeholder for the Matrix -->
+	<div><table id="matrix"></table><div>
+
+</body>
+</html>

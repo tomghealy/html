@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<!--
+		Assignment C1A2 - question 2
+		
+		Prompt the user to input a 2 digit number.  When the user presses
+		submit, the program should use a JavaScript function to validate
+		the user input.  If a valid number is received then output all
+		even numbers between 0 and the user's input as CSV and all odd
+		numbers between 0 and the user's input as CSV
+	-->
+<head>
+	<link rel="stylesheet" href="c1a2_2019_TomHealy.css">
+	<script src="c1a2q2_2019_TomHealy.js"></script>
+	<script src="c1a2_functions_2019_TomHealy.js"></script>
+	<title>Assignment: C1A2Q2 2019 Tom Healy</title>
+	<meta name="description" content="C1A2Q2 2019 Tom Healy">
+	<meta name="keywords" content="Javacript, User Input, Validation, Loops, Conditions, Output">
+</head>
+<body>
+
+	<h1 align="center">C1 A2 Q2 2019 Tom Healy</h1>
+	
+	<!-- Input field for the user input, use the autofocus to make the input field active by default -->
+	<input id="userInput" class="input" type="text" autofocus>
+	
+	<!-- Button to process the user input -->
+	<button type="button" class="button" onClick="processInput()">Please enter a two digit number</button>
+	
+	<!-- Placeholder for error messages -->
+	<p class="errorMsg" id="errorMessage"></p>
+	<br>
+	
+	<!-- Placeholder for the even numbers -->
+	<p id="evenNumbers"></p>
+	<br>
+	
+	<!-- Placeholder for the odd numbers -->
+	<p id="oddNumbers"></p>
+	
+</body>
+</html>

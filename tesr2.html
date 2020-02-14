@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+	<!--
+		Assignment C1A2: question 4 Film Recommendations 
+	
+		Propmt the user to select a film genre from a dropdown list.
+		Display three recommendations for the selected genre
+	-->
+<html>
+<head>
+	<!--  External CSS file -->
+	<link rel="stylesheet" href="c1a2_2019_TomHealy.css">
+	
+	<!-- JavaScript files -->
+	<script src="c1a2q4_2019_TomHealy.js"></script>
+	<script src="c1a2_functions_2019_TomHealy.js"></script>
+	<script src="tesr2.js"></script>
+	
+	<meta charset="UTF-8">
+	
+	<!-- SEO -->
+	<title>Assignment: C1A2Q4 2019 Tom Healy</title>
+	<meta name="description" content="C1A2Q4 2019 Tom Healy">
+	<meta name="keywords" content="Javacript, User Input, Validation, Loops, Filters, Output">
+</head>
+
+<!--	Create the list of filems once when the page loads -->
+<body onload="createFilmList()">
+	<div id="container">
+		<h1 align="center">C1 A2 Q4 2019 Tom Healy</h1>
+
+		<p>Select a genre from the drop-down list:</p>
+
+		<!-- Create the dropdown lis with the film genres, use a function to catpute the selection -->
+		<form>
+			<select id="genre" onChange="getGenre();">
+				<option>Action</option>
+				<option>Comedy</option>
+				<option>Drama</option>
+				<option>History</option>
+			</select>
+			
+			<!--  Create a button to allow the user to generate the recommendations -->
+			<input type="button" class="button" onClick="recommendations()" value="List Recommendations"/>
+		</form>
+		
+		<!-- Heading for recommendations -->
+		<br>
+		<p align="center" id="genreMessage"></p>
+		<br>
+				
+		<!-- Create a placeholder for the recommendations -->
+		<div id="main">
+			<table id="recommended"></table>
+		</div>
+		
+		<div id="filler">
+			<img src="Images/Oscars.jpg"
+				alt='Oscars'
+				height="150"
+				width:"100"
+			/>
+		</div>
+	</div>
+	
+	<!-- Footer Section -->
+	<footer id="footer">
+		Film details sourced from IMDb - www.imdb.com
+	</footer> 
+
+</body>
+</html>
